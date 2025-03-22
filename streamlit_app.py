@@ -178,7 +178,7 @@ with st.form("patient_form", clear_on_submit=False):
         st.write("cT4: Tumor of any size with direct extension into the ipsilateral adrenal gland")
     default=safe_get_list(patient_data, "Clinical_Stage_Extremity") if patient_data else []
 
-    Clinical_Stage_Retroperitoneum = st.multiselect("Clinical Stage Retroperitoneum", ["cT0", "cTx", "cT1", "cT2a", "cT2b", "cT3", "cT4a", "cT4b", "cT4c", "cN0", "cN1", "M0", "M1", "Non Extremity"]),
+    Clinical_Stage_Retroperitoneum = st.multiselect("Clinical Stage Retroperitoneum", ["cT0", "cTx", "cT1", "cT2a", "cT2b", "cT3", "cT4a", "cT4b", "cT4c", "cN0", "cN1", "M0", "M1", "Non Retroperitoneal"]),
     with st.expander("Clinical Stage Retroperitoneum Classification"):
         st.write("cT0: No evidence of primary tumor")
         st.write("cTx: Primary tumor cannot be assessed")
