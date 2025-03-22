@@ -220,7 +220,7 @@ with st.form("patient_form", clear_on_submit=False):
 
     # Treatment Details
     st.subheader("Treatment Details")
-    Dose_per_fraction = st.number_input("Dose_per_fraction", min_value=0, max_value=100, step=1, value=int(safe_get(patient_data, "Dose_per_fraction", 0)) if patient_data else 0
+    Dose_per_fraction = st.number_input("Dose_per_fraction (Gy)", min_value=0, max_value=100, step=1, value=int(safe_get(patient_data, "Dose_per_fraction", 0)) if patient_data else 0
     )
 
     Fractionation = st.number_input("Fractionation", min_value=0, max_value=100, step=1, value=int(safe_get(patient_data, "Fractionation", 0)) if patient_data else 0
